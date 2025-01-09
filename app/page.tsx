@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import UpgradeButton from './components/UpgradeButton';
 import ClaimButton from './components/ClaimButton';
 import DHTBalanceCard from './components/DHTBalanceCard';
@@ -10,9 +10,10 @@ import UserProfileBar from './components/UserProfileBar';
 
 export default function HomePage() {
   const [balance, setBalance] = useState(100); // Initial balance
-  const [hashRate, setHashRate] = useState(1);
   const [isMining, setIsMining] = useState(false);
   const [minedAmount, setMinedAmount] = useState(0);
+
+  const hashRate = 1
 
   const toggleMining = () => {
     if (isMining) {
