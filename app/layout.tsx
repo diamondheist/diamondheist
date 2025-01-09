@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
        <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} antialiased min-h-screen bg-cover bg-center bg-no-repeat`} style={{ backgroundImage: "url('/background.png')" }}>
         {children}
       </body>
     </html> 
