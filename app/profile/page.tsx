@@ -10,14 +10,7 @@ interface UserData {
   language_code: string;
   is_premium?: boolean;
 }
-interface WebAppInitData {
-    user: UserData;
-  }
-  
-  interface TelegramWebApp {
-    initDataUnsafe: WebAppInitData;
-  }
-  
+
 declare global {
   interface Window {
     Telegram?: {
