@@ -1,5 +1,5 @@
-'use client'
 
+import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import { Inter } from "next/font/google"
@@ -8,7 +8,10 @@ import { TonConnectUIProvider } from "@tonconnect/ui-react";
 
 const inter = Inter({ subsets: ['latin'] })
 
-
+export const metadata: Metadata = {
+  title: "Diamond Heist",
+  description: "Mine to the future",
+};
 
 export default function RootLayout({
   children,
