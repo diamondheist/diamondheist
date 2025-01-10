@@ -13,7 +13,6 @@ export default function WalletPage() {
   const [tonWalletAddress, setTonWalletAddress] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-   setBalance(100)
    
   const handleWalletConnection = useCallback((address: string)=> {
     setTonWalletAddress(address);
@@ -51,6 +50,11 @@ const handleWalletDisconnection = useCallback(() => {
     }
 
   },[tonConnectUI, handleWalletConnection, handleWalletDisconnection]);
+
+  useEffect(() => {
+    // Set balance once when the component mounts
+    setBalance(100); 
+  }, []);
 
   const handleWalletAction = async () => {
     if (tonConnectUI.connected) {
