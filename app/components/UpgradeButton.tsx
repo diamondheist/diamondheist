@@ -1,4 +1,4 @@
-
+'use client'
 
 interface UpgradeButtonProps {
   onClick: () => void;

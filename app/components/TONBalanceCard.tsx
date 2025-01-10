@@ -1,3 +1,5 @@
+'use client'
+
 import WithdrawButton from '../components/WithdrawButton';
 
 interface BalanceCardProps {

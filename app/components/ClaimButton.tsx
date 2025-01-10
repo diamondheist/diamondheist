@@ -1,3 +1,6 @@
+'use client';
+
+
 const ClaimButton = ({
   onClick,
   text = "Button Text",
